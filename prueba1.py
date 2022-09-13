@@ -37,6 +37,4 @@ pickle.dump(net,archivo)
 archivo.close()
 exit()
 
-imagen = leer_imagen("disco.jpg")
-print(net.feedforward(imagen))
 
