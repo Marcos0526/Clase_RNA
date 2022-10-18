@@ -17,12 +17,19 @@ test_data = list(test_data)
 
 net= network.Network([784,30,10])
 
-net.SGD( trainig_data, 30 , 10, 3.0, test_data = test_data)
+
+
+
+net.SGD( trainig_data, 3 , 10, 3.0, test_data = test_data)
+
+
 
 archivo = open("red_prueba1.pk1",'wb')
 pickle.dump(net,archivo)
 archivo.close()
 exit()
+
+
 
 #Leer el archivo
 
@@ -36,5 +43,3 @@ archivo.open("red_prueba.pk1, 'wb' ")
 pickle.dump(net,archivo)
 archivo.close()
 exit()
-
-
